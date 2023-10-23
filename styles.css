@@ -1,0 +1,152 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+.sidenav h1 {
+  margin-inline:1px;
+  font-size: 27px;
+}
+
+.sidenav {
+  height: 300%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2ddad7;
+  overflow-x: hidden;
+  padding-top: 25px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #c42222;
+  display: block;
+}
+.sidenav a img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; 
+  padding: 10px;
+}
+
+.publish-button,
+.preview-button {
+  padding: 10px 10px; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.publish-button {
+  background-color: #4caf50;
+  margin: 5px;
+}
+
+.publish-button:hover {
+  background-color: #45a049;
+}
+
+.preview-button {
+  background-color: #008cba;
+  margin: 5px;
+}
+
+.preview-button:hover {
+  background-color: #007a8a;
+}
+
+#form-builder {
+  display: flex;
+}
+
+#toolbox {
+  width: 100px;
+  min-height: 200px;
+  padding: 20px;
+  border: 5px solid #ccc;
+}
+
+#toolbox .draggable {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  cursor: move;
+}
+#form-preview {
+  padding: 220px;
+  border: 1px solid #ec0909;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 610px;
+  margin-left: calc(160px + 50px);
+}
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.button1,
+.button2 {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button1 {
+  background-color: #4caf50;
+  margin: 5px;
+}
+
+.button1:hover {
+  background-color: #45a049;
+}
+
+.button2 {
+  background-color: #008cba;
+  margin: 5px;
+}
+
+.button2:hover {
+  background-color: #007a8a;
+}
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-section {
+  flex: 1;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #000000;
+  margin: 5px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    width: 250px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
